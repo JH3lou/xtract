@@ -1,0 +1,3 @@
+HDR|LPB|702021|20250130:10:19:35:359|Taxlot
+AccountID|LotID|InstrumentID|InstrumentIDType|Quantity|QuantityType|Currency|OpenTradeDate|OpenCostBasisPrice|CloseTradeDate|CloseLotPrice|Status|UnrealizedTaxCategory|UnrealizedGain|UnrealizedLoss|RealizedTaxCategory|RealizedGain|RealizedLoss
+TLR|0

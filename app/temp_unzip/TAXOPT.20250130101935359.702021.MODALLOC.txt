@@ -1,0 +1,3 @@
+HDR|LPB|702021|20250130:10:19:35:359|ModelAllocation
+ModelID|ModelName|InstrumentID|InstrumentIDType|Allocation
+TLR|0
