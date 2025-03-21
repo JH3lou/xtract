@@ -1,0 +1,22 @@
+{
+    "templates": {
+        "TaxOverlayS3Data": {
+            "delimiter": "|",
+            "header_records": 1,
+            "trailer_records": 1,
+            "zip_naming_convention": "TAXOPT.LPB.{timestamp}.{trading_request_id}",
+            "header_format": "HDR|LPB|{trading_request_id}|{timestamp}|{sheet_name}",
+            "trailer_format": "TLR|{row_count}",
+            "txt_filename_pattern": "TAXOPT.{timestamp}.{trading_request_id}.{sheet_name}.txt"
+        },
+        "FinanceDataReport": {
+            "delimiter": ",",
+            "header_records": 2,
+            "trailer_records": 1,
+            "zip_naming_convention": "FINANCE.{timestamp}.{user_id}",
+            "header_format": "HEADER|FIN|{user_id}|{timestamp}|{sheet_name}",
+            "trailer_format": "FOOTER|{row_count}",
+            "txt_filename_pattern": "FIN_{sheet_name}_{timestamp}.txt"
+        }
+    }
+}
