@@ -48,7 +48,7 @@ class TemplateManager:
     def resolve_tokens(self, text, **kwargs):
         """Dynamically replace tokens like {timestamp}, {trading_request_id}, etc."""
         tokens = {
-            "timestamp": datetime.now().strftime("%Y%m%d%H%M%S"),
+            "timestamp": datetime.datetime.now.strftime("%Y%m%d:%H:%M:%S:%f")[:-3],
             "trading_request_id": random.randint(100000, 999999),
             **kwargs  # Additional dynamic data (e.g., `sheet_name`, `row_count`)
         }
