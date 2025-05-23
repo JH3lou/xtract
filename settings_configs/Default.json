@@ -1,0 +1,24 @@
+{
+    "format_name": "Default",
+    "header_format": "HDR|LPB|{timestamp}|{file_name}|{random_6_digits}",
+    "trailer_format": "TLR|{row_count}|End",
+    "delimiter": "|",
+    "column_mappings": {
+        "AccountID": "Acc_ID",
+        "AccountName": "Acc_Name",
+        "Balance": "Acc_Balance"
+    },
+    "header_mappings": {
+        "ACCTMST": "AccountMaster",
+        "DISCRET": "DiscretionarySleeve",
+        "HOLDING": "Holding",
+        "MODALLOC": "ModelAllocation",
+        "MSTMODALLOC": "MasterModelAllocation",
+        "POSITION": "Position",
+        "RESTRC": "Restriction",
+        "RESTRCGRPITEM": "RestrictionGroupItem",
+        "TAXBUDGET": "TaxBudget",
+        "TAXLOT": "Taxlot"
+    },
+    "file_naming_pattern": "File_{timestamp}_{format_name}.txt"
+}

@@ -1,0 +1,10 @@
+{
+    "active_template": "Default",
+    "delimiter_extract": "|",
+    "delimiter_zip": "|",
+    "enable_header": true,
+    "enable_trailer": true,
+    "available_templates": [
+        "Default"
+    ]
+}

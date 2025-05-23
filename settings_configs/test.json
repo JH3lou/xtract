@@ -1,0 +1,8 @@
+{
+    "header_format": "HDR|{timestamp}|{file_name}|{random_6_digits}",
+    "trailer_format": "TLR|{row_count}",
+    "header_mappings": {
+        "ACCTMST": "AccountMaster",
+        "DISCRET": "DiscretionarySleeve"
+    }
+}

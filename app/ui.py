@@ -3,12 +3,16 @@ import customtkinter as ctk
 from tkinter import messagebox
 from app.extractor import select_and_process_zip_file
 from app.converter import convert_excel_to_zip, download_template
+from app.settings_window import SettingsWindow
 
 class TaxOptUI:
     def __init__(self, root):
         self.root = root
         self.root.geometry("450x225")
         self.root.title("Xtract - File Converter")
+
+        self.settings_icon = ctk.CTkButton(self.root, text="⚙", width=30, command=self.open_settings)
+        self.settings_icon.place(relx=0.95, rely=0.05, anchor="ne")
 
         # Dynamically adjust working directory
         current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -53,6 +57,12 @@ class TaxOptUI:
             command=select_and_process_zip_file
         )
         extract_button.pack(pady=20, padx=10)
+
+    def open_settings(self):
+        """Open the settings window."""
+        settings_window = SettingsWindow(self.root)
+        settings_window.grab_set()  # Ensure it stays on top
+
 
     def setup_convert_tab(self):
         """Setup UI for the Convert Excel to ZIP tab."""
